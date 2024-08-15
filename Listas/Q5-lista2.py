@@ -1,0 +1,10 @@
+f = input('Digite sua frase: ')
+f = f.upper()
+espacos = f.count(' ')
+a = f.count('A')
+e = f.count('E')
+i = f.count('I')
+o = f.count('O')
+u = f.count('U')
+
+print(f'A frase tem:\n{espacos} espaço(s) em branco;\n{a} letra(s) A;\n{e} letra(s) E;\n{i} letra(s) I;\n{o} letra(s) O;\nE {u} letra(s) U.')
