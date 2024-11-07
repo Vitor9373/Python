@@ -27,4 +27,4 @@ class Carro:
        
     def status(self, status_movimento, status_motor):
         print('Status motor: ', status_motor)
-        print('Status Movimento: ', status_movimento)   
+        print('Status Movimento: ', status_movimento)    
