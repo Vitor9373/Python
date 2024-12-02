@@ -22,50 +22,32 @@ class Pessoa:
 
 
 class Pai(Pessoa):
-    def __init__(self, nome, idade, endereco, cpf, sexo):
+    def __init__(self, nome, idade, endereco, cpf, sexo, filhos, esposa):
         super().__init__(nome, idade, endereco, cpf, sexo)
-        self.nome = nome
-        self.idade = idade
-        self.endereco = endereco
-        self.cpf = cpf
-        self.sexo = sexo
+        self.filhos = filhos
+        self.esposa = esposa
 
-    def detalhes(self):
-        print('nome: ', self.nome)
-        print('idade: ', self.idade)
-        print('endereço: ', self.endereco)
-        print('CPF: ', self.cpf)
-        print('sexo: ', self.sexo)    
+    def resumo(self):
         print('Filhos: ', Filho.nome)
+        print('Esposa: ', Mae.nome)
 
 
 class Mae(Pessoa):
-    def __init__(self, nome, idade, endereco, cpf, sexo):
+    def __init__(self, nome, idade, endereco, cpf, sexo, filhos, esposo):
         super().__init__(nome, idade, endereco, cpf, sexo)
-        self.nome = nome
-        self.idade = idade
-        self.endereco = endereco
-        self.cpf = cpf
-        self.sexo = sexo
+        self.filhos = filhos
+        self.esposo = esposo
 
-    def detalhes(self):
-        print('nome: ', self.nome)
-        print('idade: ', self.idade)
-        print('endereço: ', self.endereco)
-        print('CPF: ', self.cpf)
-        print('sexo: ', self.sexo)    
+    def resumo(self):   
         print('Filhos: ', Filho.nome)
+        print('Esposo: ', Pai.nome)
 
 
 
 class Filho(Pessoa):
     def __init__(self, nome, idade, endereco, cpf, sexo):
         super().__init__(nome, idade, endereco, cpf, sexo)
-        self.nome = nome
-        self.idade = idade
-        self.endereco = endereco
-        self.cpf = cpf
-        self.sexo = sexo
+        
 
     def detalhes(self):
         print('nome: ', self.nome)
