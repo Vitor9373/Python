@@ -25,7 +25,7 @@ class Pai(Pessoa):
     def __init__(self, nome, idade, endereco, cpf, sexo, filhos, esposa):
         super().__init__(nome, idade, endereco, cpf, sexo)
         self.filhos = []
-        self.esposa = none
+        self.esposa = esposa
 
     def resumo(self):
         print('Filhos: ', Filho.nome)
